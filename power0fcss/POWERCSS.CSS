@@ -1,0 +1,90 @@
+BODY{
+    text-decoration-color: #138aeb;
+    margin: 10px;
+    font-family: 'impact', sans-serif;
+    bottom: 0; ;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    height: 6px;
+    background-size: cover;
+    background-image: url('image/matthew-brodeur-qcCPIhhdgTw-unsplash.jpg');
+}
+
+ header {
+    background-color: #50bb09;
+    padding: 16px 0;
+    border-radius: 50px;
+    text-align: center;
+    animation: fadeIn 3s ease-in-out;
+    box-shadow:0 15px 25px #000000;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 10px;
+    padding: 20px;
+    color: rgb(27, 116, 218);
+    font: fantasy;
+    text-shadow: 0 0 20px #5dca2b, 0 0 30px #1fd3da, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff;}
+
+p {
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    color: #090a0e;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    background: #27343b;
+    box-shadow: 0 10px 20px rgb(0, 0, 0);
+}
+.card {
+    background: #138aeb;
+    border-radius: 80px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.897);
+    padding: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+    transition: transform 3s ease, box-shadow 1.3s ease;
+    margin: 15px;
+    justify-content: center;
+
+}
+
+
+h2 {
+    font-family: fantasy;
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+    color: chartreuse;
+}
+
+/* Keyframes should be at the root level */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(6px);
+    }
+}
+
+/* Media queries should also be at the root level */
+@media screen and (max-width: 600px) {
+    h2 {
+        max-width: 60px;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
